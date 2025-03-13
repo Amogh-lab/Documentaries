@@ -84,3 +84,32 @@ kubectl expose deployment nginx --type=LoadBalancer --port=80  # Expose a servic
 kubectl scale deployment nginx --replicas=3  # Scale deployment to 3 replicas
 ```
 
+---
+
+## 3. Jenkins: CI/CD Automation
+
+### **What is Jenkins?**
+Jenkins is an **open-source automation tool** used for **Continuous Integration (CI) and Continuous Deployment (CD)**. It automates **building, testing, and deploying** software.
+
+### **Key Features of Jenkins**
+- **Automates Builds:** Runs build scripts automatically.
+- **Integration with Docker & Kubernetes:** Deploys apps inside containers.
+- **Plugins:** Supports thousands of plugins for integration.
+- **Pipeline as Code:** Defines CI/CD pipelines using `Jenkinsfile`.
+
+### **Installing Jenkins using Docker**
+```bash
+docker pull jenkins/jenkins:lts
+docker run -d -p 8080:8080 -p 50000:50000 --name jenkins jenkins/jenkins:lts
+```
+
+### **Accessing Jenkins**
+Once Jenkins is running, open your browser and go to:
+localhost:8080
+
+
+---
+
+This `.md` file provides a **detailed guide** to setting up **Docker, Kubernetes, and Jenkins** with properly formatted code blocks.
+Let me know if you need any modifications! 🚀
+
